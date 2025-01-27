@@ -7,7 +7,15 @@
     <!-- font awesom -->
     <script src="https://kit.fontawesome.com/dc56b60fc7.js" crossorigin="anonymous"></script>
     <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --dark3: #777777;
+          --dark1: #1C1C1C;
+        }
+      </style>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +79,7 @@
          <!-- Great tea  -->
           <section class="max-w-screen-2xl mx-auto mb-28">
             <div class="md:grid md:grid-cols-2">
-                <div class="mb-36">
+                <div class="mb-36 mx-auto  w-11/12">
                     <div class="grid grid-cols-2 grid-rows-3 md:gap-6 md:w-11/12 gap-5">
                         <div class="bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
                         <div class="row-span-2 bg-orange-50 rounded-xl">
@@ -155,6 +163,23 @@
             </div>
 
            </section>
+           <!-- news enent -->
+            <section class="max-w-screen-2xl mx-auto mb-28">
+                <h1 class="font-extrabold text-[#1C1C1C] text-4xl text-center">News & Events</h1>
+                <p class="font-medium text-base text-[#777777] text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <div>
+                    <img src="./images/news-1.png" alt="news ">
+
+                    <time class="font-medium text-base text-[#777777]" datetime="feb/7/2017">10-feb-2027</time>
+                    <!-- bg-[var(--color-clifford)] -->
+
+                    <h2 class="text-[var(--dark1)] text-xl">Collecting 8 points for discount</h2>
+
+                    <p class="text-[var(--dark3)]">There are many variations of passages of Lorem Ipsum available.</p>
+
+                    <h5>Learn more</h5>
+                </div>
+            </section>
     </main>
 
 
